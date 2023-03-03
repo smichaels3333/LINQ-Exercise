@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿
 
 namespace LINQ
 { 
@@ -10,7 +8,10 @@ namespace LINQ
         {
             var videoGames = new List<string>() { "Halo Infinite", "Call of Duty", "Forza Horizon", "Hogwarts Legacy"};
             var gameLength = videoGames.OrderBy(game=> game.Length);
-            Console.WriteLine(gameLength);
+            foreach(var game in gameLength) 
+            {
+                Console.WriteLine(gameLength);
+            }
         }
     }
 }
